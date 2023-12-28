@@ -1,13 +1,15 @@
 """Running the Xetra ETL application"""
+import os
+import sys
 import argparse
 import logging
 import logging.config
-
+from dotenv import load_dotenv
 import yaml
-
+load_dotenv()
+sys.path.append(os.getenv('PYTHONPATH'))
 from xetra.common.s3 import S3BucketConnector
 from xetra.transformers.xetra_transformer import XetraETL, XetraSourceConfig, XetraTargetConfig
-
 
 def main():
     """
@@ -28,12 +30,12 @@ def main():
     # reading s3 configuration
     s3_config = config['s3']
     # creating the S3BucketConnector classes for source and target
-    s3_bucket_src = S3BucketConnector(access_key=s3_config['access_key'],
-                                      secret_key=s3_config['secret_key'],
+    s3_bucket_src = S3BucketConnector(access_key='AWS_ACCESS_KEY_ID',
+                                      secret_key='AWS_SECRET_KEY',
                                       endpoint_url=s3_config['src_endpoint_url'],
                                       bucket=s3_config['src_bucket'])
-    s3_bucket_trg = S3BucketConnector(access_key=s3_config['access_key'],
-                                      secret_key=s3_config['secret_key'],
+    s3_bucket_trg = S3BucketConnector(access_key='AWS_ACCESS_KEY_ID',
+                                      secret_key='AWS_SECRET_KEY',
                                       endpoint_url=s3_config['trg_endpoint_url'],
                                       bucket=s3_config['trg_bucket'])
     # reading source configuration

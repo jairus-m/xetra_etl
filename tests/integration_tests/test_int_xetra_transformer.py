@@ -1,12 +1,15 @@
 """Integration Test XetraETLMethods"""
 import os
+import sys
 import unittest
 from io import BytesIO
 from datetime import datetime, timedelta
 
 import boto3
 import pandas as pd
-
+from dotenv import load_dotenv
+load_dotenv()
+sys.path.append(os.getenv('PYTHONPATH'))
 from xetra.common.s3 import S3BucketConnector
 from xetra.common.constants import MetaProcessFormat
 from xetra.transformers.xetra_transformer import XetraETL, XetraSourceConfig, XetraTargetConfig
