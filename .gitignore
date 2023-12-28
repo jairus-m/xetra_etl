@@ -1,0 +1,11 @@
+# Env Variables
+*.env
+
+# Jupyter notebooks
+*.ipynb
+
+# xetra_project venv
+xetra_project/
+s
+# Data
+*.csv
