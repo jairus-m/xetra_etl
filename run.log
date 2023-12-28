@@ -683,3 +683,14 @@ Xetra Transformer - 2023-12-28 08:48:26,336 - INFO - Reading file https://s3.us-
 Xetra Transformer - 2023-12-28 08:48:26,458 - INFO - Writing file to https://s3.us-east-2.amazonaws.com/xetra-8750/meta_file.csv
 Xetra Transformer - 2023-12-28 08:48:26,900 - INFO - Xetra meta file successfully updated.
 Xetra Transformer - 2023-12-28 08:48:26,901 - INFO - Xetra ETL job finished.
+Xetra Transformer - 2023-12-28 09:30:34,017 - INFO - Xetra ETL job started.
+Xetra Transformer - 2023-12-28 09:30:34,018 - INFO - Reading file https://s3.us-east-2.amazonaws.com/xetra-8750/meta_file.csv/
+Xetra Transformer - 2023-12-28 09:30:34,907 - INFO - Extracting Xetra source files started...
+Xetra Transformer - 2023-12-28 09:30:34,907 - INFO - Extracting Xetra source files finished.
+Xetra Transformer - 2023-12-28 09:30:34,907 - INFO - The dataframe is empty. No transformations will be applied.
+Xetra Transformer - 2023-12-28 09:30:34,907 - INFO - The dataframe is empty! No file will be written!
+Xetra Transformer - 2023-12-28 09:30:34,907 - INFO - Xetra target data successfully written.
+Xetra Transformer - 2023-12-28 09:30:34,908 - INFO - Reading file https://s3.us-east-2.amazonaws.com/xetra-8750/meta_file.csv/
+Xetra Transformer - 2023-12-28 09:30:35,002 - INFO - Writing file to https://s3.us-east-2.amazonaws.com/xetra-8750/meta_file.csv
+Xetra Transformer - 2023-12-28 09:30:35,461 - INFO - Xetra meta file successfully updated.
+Xetra Transformer - 2023-12-28 09:30:35,461 - INFO - Xetra ETL job finished.
