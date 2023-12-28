@@ -6,15 +6,16 @@ name = "pypi"
 [packages]
 pandas = "*"
 python-dotenv = "*"
-awscli = "*"
 boto3 = "*"
-moto = "*"
-jupyter = "*"
 pyyaml = "*"
-coverage = "*"
-pylint = "*"
+
 
 [dev-packages]
+awscli = "*"
+jupyter = "*"
+coverage = "*"
+pylint = "*"
+moto = "*"
 
 [requires]
 python_version = "3.9"
