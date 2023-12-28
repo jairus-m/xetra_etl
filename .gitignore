@@ -9,3 +9,9 @@ xetra_project/
 s
 # Data
 *.csv
+
+# .dat
+*.dat
+
+# png files
+*.png

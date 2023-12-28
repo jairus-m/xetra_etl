@@ -9,13 +9,14 @@ python-dotenv = "*"
 boto3 = "*"
 pyyaml = "*"
 
-
 [dev-packages]
 awscli = "*"
 jupyter = "*"
 coverage = "*"
 pylint = "*"
 moto = "*"
+matplotlib = "*"
+memory-profiler = "*"
 
 [requires]
 python_version = "3.9"
