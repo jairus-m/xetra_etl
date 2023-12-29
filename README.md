@@ -16,3 +16,5 @@ Topics covered:
 - unit testing
 - integration testing
 - dockerization
+
+tools used: python, pipenv, AWS S3, docker, kubernetes, git
