@@ -17,4 +17,4 @@ Topics covered:
 - integration testing
 - dockerization
 
-tools used: python, pipenv, AWS S3, docker, kubernetes, git
+tools used: python, AWS S3, docker, kubernetes, git
